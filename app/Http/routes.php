@@ -18,5 +18,8 @@
 
 	Route::controller('/', 'ShopperController\ShopperController');
 
-	
+	Route::get('/503',function(){
+		return view('errors.503');
+	});
+
 ?>
