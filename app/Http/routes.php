@@ -15,11 +15,23 @@
 //     return view('welcome');
 // });
 
+	//////////////////ROUTE-GET/////////////////////////////
+
+	Route::get('auth/login', 'Auth\AuthController@getLogin');
+	
+	Route::get('503', function(){
+		return view('errors.503');
+	});
+
+	////////////////////////////////////////////////////////
+
+
+
+	//////////////////ROUTE-CONTROLLER//////////////////////
 
 	Route::controller('/', 'ShopperController\ShopperController');
 
-	Route::get('/503',function(){
-		return view('errors.503');
-	});
+	////////////////////////////////////////////////////////
+
 
 ?>
