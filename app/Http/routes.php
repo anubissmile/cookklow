@@ -22,6 +22,4 @@
 		return view('errors.503');
 	});
 
-	
-
 ?>
