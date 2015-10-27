@@ -1,4 +1,4 @@
-@extends('shopping.home')
+@extends('shopping.home'.$nl)
 @section('content')
-	<h1>HELLO SHOPPING</h1>
+	@include($namepage)
 @stop

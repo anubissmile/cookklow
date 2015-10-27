@@ -9,6 +9,6 @@ use App\Http\Controllers\Controller;
 class ShopperController extends Controller
 {
     public function getIndex(){
-    	return view('shopping.index');
+    	return view('shopping.index', ['namepage' => 'shopping.section.content-right']);
     }
 }
