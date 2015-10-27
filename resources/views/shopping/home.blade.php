@@ -36,7 +36,7 @@
 	</header><!--END-HEADER-->
 
 	<!-- START-SLIDER -->
-	@include('shopping.section.slider')
+		@include('shopping.section.slider')
 	<!-- END-SLIDER -->
 	
 	<section>
