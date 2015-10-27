@@ -34,10 +34,6 @@
 		<!-- END-HEADER-BOTTOM -->
 		
 	</header><!--END-HEADER-->
-
-	<!-- START-SLIDER -->
-		@include('shopping.section.slider')
-	<!-- END-SLIDER -->
 	
 	<section>
 		<div class="container">
