@@ -62,4 +62,8 @@ class AuthController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+
+    public function getLogin(){
+        return view('shopping.index', ['namepage' => 'shopping.content.login', 'nl' => '-nl']);
+    }
 }

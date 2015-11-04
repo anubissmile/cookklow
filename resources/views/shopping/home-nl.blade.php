@@ -34,19 +34,10 @@
 		<!-- END-HEADER-BOTTOM -->
 		
 	</header><!--END-HEADER-->
-
-	<!-- START-SLIDER -->
-		@include('shopping.section.slider')
-	<!-- END-SLIDER -->
 	
 	<section>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-3">
-					<!-- START-LEFT-SIDEBAR -->
-					@include('shopping.section.left-sidebar')
-					<!-- END-LEFT-SIDEBAR -->
-				</div>
 
 				<!-- START-CONTENT-RIGHT -->
 				@yield('content')

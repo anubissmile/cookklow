@@ -1,4 +1,7 @@
-@extends('shopping.home')
+<div style="display:none">{{$f = isset($nl) ? $nl : ''}}</div>
+
+	@extends('shopping.home'.$f)
+
 @section('content')
-	<h1>HELLO SHOPPING</h1>
+	@include($namepage)
 @stop
