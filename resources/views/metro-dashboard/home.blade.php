@@ -20,7 +20,7 @@
 	<!-- START-LINK-STYLESHEET -->
 
 	<!-- START-HEADER-JAVASCRIPT -->
-	@include('metro-dashboard.script.header-script')
+	@include('metro-dashboard.script.scriptheader')
 	@yield('javascript')
 	<!-- END-HEADER-JAVASCRIPT -->
 	
@@ -749,7 +749,7 @@
 	
 	
 	<!-- START-FOOTER-JAVASCRIPT -->
-	@include('metro-dashboard.script.footer-script')
+	@include('metro-dashboard.script.scriptfooter')
 	@yield('javascript')
 	<!-- END-FOOTER-JAVASCRIPT -->
 	
