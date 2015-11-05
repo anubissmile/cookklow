@@ -8,5 +8,7 @@ use App\Http\Controllers\Controller;
 
 class AdminDashBoardController extends Controller
 {
-    //
+    public function getIndex(){
+    	return view('metro-dashboard.index');
+    }
 }

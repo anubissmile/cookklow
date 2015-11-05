@@ -27,7 +27,6 @@
 
 
 		/////////////////////E-SHOPPER/////////////////////////
-
 		Route::get('blog', 'ShopperController\ShopperController@getBlog');
 		Route::get('blogs', 'ShopperController\ShopperController@getBlogSingle');
 		Route::get('cart', 'ShopperController\ShopperController@getCart');
@@ -35,7 +34,6 @@
 		Route::get('contact', 'ShopperController\ShopperController@getContactUs');
 		Route::get('product-detail', 'ShopperController\ShopperController@getProductDetail');
 		Route::get('shop', 'ShopperController\ShopperController@getShop');
-		
 		////////////////////////////////////////////////////////
 
 	////////////////////////////////////////////////////////
@@ -46,6 +44,7 @@
 
 	//////////////////ROUTE-CONTROLLER//////////////////////
 
+	Route::controller('admin/dashboard', 'AdminDashboardController\AdminDashBoardController');
 	Route::controller('/', 'ShopperController\ShopperController');
 
 	////////////////////////////////////////////////////////
