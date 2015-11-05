@@ -4,7 +4,7 @@
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="logo pull-left">
-							<a href="index.html"><img src="{{asset('e-shopper/images/home/logo.png')}}" alt="" /></a>
+							<a href="index.html"><img src="{{asset('sources/e-shopper/images/home/logo.png')}}" alt="" /></a>
 						</div>
 						<div class="btn-group pull-right">
 							<div class="btn-group">
@@ -37,7 +37,7 @@
 								<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
 								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
 								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-								<li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
+								<li><a href="http://{{ $_SERVER['SERVER_NAME'] . '/cookklow' }}/auth/login"><i class="fa fa-lock"></i> Login</a></li>
 							</ul>
 						</div>
 					</div>

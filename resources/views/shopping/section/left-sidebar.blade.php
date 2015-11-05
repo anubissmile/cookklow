@@ -132,7 +132,7 @@
 						</div><!--/price-range-->
 						
 						<div class="shipping text-center"><!--shipping-->
-							<img src="{{asset('e-shopper/images/home/shipping.jpg')}}" alt="" />
+							<img src="{{asset('sources/e-shopper/images/home/shipping.jpg')}}" alt="" />
 						</div><!--/shipping-->
 					
 					</div>
