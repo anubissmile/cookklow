@@ -14,4 +14,9 @@ class AdminDashBoardController extends Controller {
     	return view('metro-dashboard.index', 
     		['dashboardnamepage' => $this->metro_content . "dashboard-content"]);
     }
+
+    public function getLogin(){
+    	return view('metro-dashboard.login');
+    }
+
 }
