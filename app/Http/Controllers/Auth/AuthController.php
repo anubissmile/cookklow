@@ -64,6 +64,13 @@ class AuthController extends Controller
     }
 
     public function getLogin(){
-        return view('shopping.index', ['namepage' => 'shopping.content.login', 'nl' => '-nl']);
+        return view('metro-dashboard.login');
     }
+
+    public function postLogin(Request $request){
+
+        
+
+    }
+
 }
