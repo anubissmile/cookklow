@@ -5,6 +5,10 @@ namespace App\Http\Controllers\AdminDashboardController;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+// NECESSARRY
+use Auth;
+use App\Library\WesarutToolkits;
+// NECESSARRY
 
 class AdminDashBoardController extends Controller {
 

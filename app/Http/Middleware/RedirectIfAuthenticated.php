@@ -4,6 +4,9 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
+// NECESSARRY
+use App\Library\WesarutToolkits;
+// NECESSARRY
 
 class RedirectIfAuthenticated
 {
@@ -35,7 +38,7 @@ class RedirectIfAuthenticated
     public function handle($request, Closure $next)
     {
         if ($this->auth->check()) {
-            return redirect('/home');
+            return redirect(WesarutToolkits::genPath('admin/dashboard'));
         }
 
         return $next($request);

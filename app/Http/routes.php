@@ -12,13 +12,15 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+	
+	/////////////////////ROUTE-GROUP////////////////////////
+	Route::group(['middleware' => 'auth'], function(){
+		Route::controller('admin/dashboard', 'AdminDashboardController\AdminDashBoardController');	
+	});
+	////////////////////////////////////////////////////////
+
 
 	//////////////////ROUTE-GET/////////////////////////////
-
-	Route::get('auth/login', 'Auth\AuthController@getLogin');
 
 	Route::get('503', function(){
 		return view('errors.503');
@@ -51,8 +53,7 @@
 	////////////////////////////////////////////////////////
 
 	//////////////////ROUTE-CONTROLLER//////////////////////
-
-	Route::controller('admin/dashboard', 'AdminDashboardController\AdminDashBoardController');
+	Route::controller('home', 'ShopperController\ShopperController');
 	Route::controller('/', 'ShopperController\ShopperController');
 
 	////////////////////////////////////////////////////////

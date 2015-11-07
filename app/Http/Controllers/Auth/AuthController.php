@@ -11,6 +11,7 @@ use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Auth;
 use Illuminate\Http\Request;
 use App\Library\WesarutToolKits;
+//NECESSARRY//
 
 class AuthController extends Controller
 {
@@ -74,6 +75,7 @@ class AuthController extends Controller
 
     public function postLogin(Request $request){
 
+
         $email = $request->input('email');
         $pwd = $request->input('password');
         $sucPath = 'http://' . $request->server('SERVER_NAME') . '/cookklow/admin/dashboard';
@@ -86,22 +88,23 @@ class AuthController extends Controller
             return 'Login Failure';
         }
 
+
     }
 
     public function getLogout(){
 
-        if(Auth::check()){
+        if(Auth::check()){ //If you're logged in.
 
-            if(Auth::logout()){
-                //SUCCESS//
-                return redirect()->intended();
-            }else{
+            if(Auth::logout()){ //Do logout.
                 //FAILURE//
                 return 'Logout failure';
+            }else{
+                //SUCCESS//
+                return redirect()->intended(WesarutToolKits::genPath('admin/auth/login'));
             }
 
         }else{
-            return redirect()->intended();
+            return redirect()->back();
         }
 
     }
