@@ -26,6 +26,7 @@
 
 
 
+
 		/////////////////////E-SHOPPER/////////////////////////
 		Route::get('blog', 'ShopperController\ShopperController@getBlog');
 		Route::get('blogs', 'ShopperController\ShopperController@getBlogSingle');
