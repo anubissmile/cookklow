@@ -7,6 +7,10 @@ use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+//NECESSARRY//
+use Auth;
+use Illuminate\Http\Request;
+use App\Library\WesarutToolKits;
 
 class AuthController extends Controller
 {
@@ -22,6 +26,7 @@ class AuthController extends Controller
     */
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
+
 
     /**
      * Create a new authentication controller instance.
@@ -69,7 +74,35 @@ class AuthController extends Controller
 
     public function postLogin(Request $request){
 
-        
+        $email = $request->input('email');
+        $pwd = $request->input('password');
+        $sucPath = 'http://' . $request->server('SERVER_NAME') . '/cookklow/admin/dashboard';
+
+        if(Auth::attempt(['email' => $email, 'password' => $pwd])){
+            //success
+            return redirect()->intended($sucPath);
+        }else{
+            //failure
+            return 'Login Failure';
+        }
+
+    }
+
+    public function getLogout(){
+
+        if(Auth::check()){
+
+            if(Auth::logout()){
+                //SUCCESS//
+                return redirect()->intended();
+            }else{
+                //FAILURE//
+                return 'Logout failure';
+            }
+
+        }else{
+            return redirect()->intended();
+        }
 
     }
 

@@ -13,6 +13,10 @@ class WesarutToolkits {
 		return "Good Bye $name";
 	}
 
+	public static function genPath($path){
+		return 'http://' . $_SERVER['SERVER_NAME'] . "/cookklow/$path";
+	}
+
 }
 
 ?>

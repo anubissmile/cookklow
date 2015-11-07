@@ -170,7 +170,7 @@
 								</li>	
                             	<li>
                                     <a href="#">
-										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
+										<span class="avatar"><img src="{{asset('sources/metro-dashboard/img/avatar.jpg')}}" alt="Avatar"></span>
 										<span class="header">
 											<span class="from">
 										    	Dennis Ji
@@ -186,7 +186,7 @@
                                 </li>
                                 <li>
                                     <a href="#">
-										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
+										<span class="avatar"><img src="{{asset('sources/metro-dashboard/img/avatar.jpg')}}" alt="Avatar"></span>
 										<span class="header">
 											<span class="from">
 										    	Dennis Ji
@@ -202,7 +202,7 @@
                                 </li>
                                 <li>
                                     <a href="#">
-										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
+										<span class="avatar"><img src="{{asset('sources/metro-dashboard/img/avatar.jpg')}}" alt="Avatar"></span>
 										<span class="header">
 											<span class="from">
 										    	Dennis Ji
@@ -218,7 +218,7 @@
                                 </li>
 								<li>
                                     <a href="#">
-										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
+										<span class="avatar"><img src="{{asset('sources/metro-dashboard/img/avatar.jpg')}}" alt="Avatar"></span>
 										<span class="header">
 											<span class="from">
 										    	Dennis Ji
@@ -234,7 +234,7 @@
                                 </li>
                                 <li>
                                     <a href="#">
-										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
+										<span class="avatar"><img src="{{asset('sources/metro-dashboard/img/avatar.jpg')}}" alt="Avatar"></span>
 										<span class="header">
 											<span class="from">
 										    	Dennis Ji
@@ -270,7 +270,7 @@
  									<span>Account Settings</span>
 								</li>
 								<li><a href="#"><i class="halflings-icon user"></i> Profile</a></li>
-								<li><a href="login.html"><i class="halflings-icon off"></i> Logout</a></li>
+								<li><a href="http://localhost/cookklow/admin/auth/logout"><i class="halflings-icon off"></i> Logout</a></li>
 							</ul>
 						</li>
 						<!-- end: User Dropdown -->
